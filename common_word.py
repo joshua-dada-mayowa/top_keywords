@@ -23,7 +23,8 @@ def getKeywords(articletext):
 
 url = "http://en.wikipedia.org/wiki/In-memory_database"
 htmltext = urllib.request.urlopen(url).read()
-soup = BeautifulSoup(htmltext, "html.parser")
+soup= BeautifulSoup(htmltext, "lxml")
+# soup = BeautifunelSoup(htmltext, "html.parser")
 
 '''
 Collect all text from url
